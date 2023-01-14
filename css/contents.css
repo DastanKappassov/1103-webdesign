@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* SLIDES */
+.slides{
+    box-sizing: border-box;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    z-index: -1;
+    position:relative;
+}
+.slides > div{
+    display:none;
+    height:100%;
+    width:1200px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.slides > div a{
+    position:relative;
+    left:0;
+    top:0;
+    width:1200px;
+    height:100%;
+}
+.slides > div a h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    background: #763d00c0;
+    color: #ffefa1;
+    margin-top:-150px;
+}
+
+/* CONTENTS */
+#contents{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+}
+#contents>ul{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* ICON SETTINGS */
+.icon{
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+}
+
+/* NOTICE */
+.notice{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 400px;
+    height: 100%;
+}
+    /* NOTICE TITLE */
+    .notice h3{
+        border-bottom: 2px solid #ffefa1;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    .notice h3 a{
+        margin-left: 5px;
+        color: #000;
+    }
+    /* NOTICE DATA */
+    .notice ul li{
+        width: 100%;
+        line-height: 30px;
+        padding: 0 5px;
+    }
+    .notice ul li:hover{
+        background: #763d00c0;
+    }
+    .notice ul li:hover a{
+        color: #fff;
+    }
+    .notice ul li a span{
+        float: right;
+    }
+    .notice ul li a{
+        color: #000;
+    }
+/* GALLERY */
+.gallery{
+    box-sizing: border-box;
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+}
+/* GALLERY TITLE */
+.gallery h3{
+    border-bottom: 2px solid #ffefa1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.gallery h3 a{
+    margin-left: 5px;
+    color: #000;
+}
+/* GALLERY DATA */
+.gallery ul{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    }
+    .gallery ul li{
+        overflow: hidden;
+        margin: auto;
+        width: 120px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        opacity: 0.7;
+    }
+    .gallery ul li:first-child{
+        margin-left: 0;
+    }
+    .gallery ul li:last-child{
+        margin-right: 0;
+    }
+    .gallery ul li a{
+        display: flex;
+    }
+    /* GALLERY DATA HOVER */
+    .gallery ul li:hover{
+        opacity: 1;
+    }
+
+/* SHORTCUT */
+.shortcut{
+    box-sizing: border-box;
+    width: 400px;
+    height: 100%;
+    padding: 10px;    
+}
+    /* SHORTCUT TITLE */
+    .shortcut h3{
+        border-bottom: 2px solid #ffefa1;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    .shortcut h3 a{
+        margin-left: 5px;
+        color: #000;
+    }
+    /* SHORTCUT DATA */
+    /* .shortcut>a{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 130px;
+        overflow: hidden; 
+        opacity: 0.8;       
+    }
+    .shortcut>a:hover{
+        opacity: 1;
+    }
+    .shortcut>a>img{
+        position: absolute;
+        margin-top: -70px;
+        width: 100%;
+    }
+    .shortcut-text{
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+
+        height: 95px;
+        width:300px;
+        background: #763d00c0;
+
+        color: #ffefa1;
+        padding: 5px 10px;  
+    }
+    .shortcut-text h4{
+        border-bottom: 1px solid #ffefa1;
+        padding-bottom: 3px;
+        margin-bottom: 3px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .shortcut-text p{
+        font-size: 11px;
+    }      */
+
+.shortcut-content>a>ul{
+    box-sizing: border-box;
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    display: flex;
+    /* background: red; */
+}
+.shortcut-inside{
+    overflow: hidden;
+    width: 180px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    opacity: 0.8;
+}
+.shortcut-inside img{
+    width: 100%;
+    overflow: hidden;
+}
+.shortcut-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background: #763d00c0;
+    
+    color: white;
+    font-size: 12px;
+}
+.shortcut-text h4{
+    text-align: center;
+    border-bottom: 1px solid #ffefa1;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+.shortcut-text p{
+    margin-top: 2px;
+}
+.shortcut-inside:hover{
+    opacity: 1;
+}
